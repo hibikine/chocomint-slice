@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mint-background {
+  background-image: linear-gradient(
+    45deg,
+    theme('colors.white') 25%,
+    theme('colors.teal.100') 25%,
+    theme('colors.teal.100') 50%,
+    theme('colors.white') 50%,
+    theme('colors.white') 75%,
+    theme('colors.teal.100') 75%,
+    theme('colors.teal.100') 100%
+  );
+  background-size: 40px 40px;
+}
+
+.text-outline {
+  text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    -1px -1px 0 #fff;
+}
+.text-outline-gray {
+  text-shadow: 1px 1px 0 theme('colors.slate.400'),
+    1px -1px 0 theme('colors.slate.400'), -1px 1px 0 theme('colors.slate.400'),
+    -1px -1px 0 theme('colors.slate.400');
+}
+
+.text-outline-black-shadow {
+  text-shadow: 1px 1px 0 theme('colors.slate.800'),
+    1px -1px 0 theme('colors.slate.800'), -1px 1px 0 theme('colors.slate.800'),
+    -1px -1px 0 theme('colors.slate.800'), 0px 3px 3px theme('colors.slate.600');
+}
