@@ -150,7 +150,7 @@ export const Share = ({
         id={`download-link-${idKey}`}
         href=""
         className="hidden"
-        download={`{text}.png`}
+        download={`${text}.png`}
       />
       <p className="mb-1 border-teal-300 border-4 bg-white p-2 max-w-xl">
         画像が自動でダウンロードされない場合は、以下の画像を長押し/右クリックで保存するか、スクリーンショットで保存してください。
